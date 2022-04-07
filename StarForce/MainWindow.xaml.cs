@@ -6,9 +6,10 @@ using System.IO;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Input;
+using system.net;
 using System.Xml;
 namespace StarForce
-{
+{ 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -26,7 +27,18 @@ namespace StarForce
             {
                 UpdateSyntax();
 
-
+ 			WebClient web = new WebClient();
+                if (web.DownloadString("https://www.ch3rry.red/storage/starforce/check.html") != "enabled")
+                {
+                    MessageBoxResult result = System.Windows.MessageBox.Show("StarForce is currently disabled, please try agian later.", "Disabled", MessageBoxButton.OK, MessageBoxImage.Information); // Add custom Box
+                    Environment.Exit(0);
+                } else
+				{
+				data.close ();
+				reader.close ();
+				}
+				
+             
 
 
             };
@@ -90,7 +102,7 @@ namespace StarForce
             }
             else
             {
-               return;
+              MessageBoxResult result = System.Windows.MessageBox.Show("Please inject before trying to execute a script.", "Not injected", MessageBoxButton.OK, MessageBoxImage.Information);
             }
 
         }
