@@ -107,7 +107,7 @@ namespace StarForce
 
         }
 
-        private void main_MouseDown(object sender, MouseButtonEventArgs e)
+        private void window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
         }
