@@ -1,4 +1,4 @@
-﻿using ICSharpCode.AvalonEdit.Highlighting;
+using ICSharpCode.AvalonEdit.Highlighting;
 using ICSharpCode.AvalonEdit.Highlighting.Xshd;
 using KatoAPI;
 using System;
@@ -33,10 +33,10 @@ namespace StarForce
                     MessageBoxResult result = System.Windows.MessageBox.Show("StarForce is currently disabled, please try agian later.", "Disabled", MessageBoxButton.OK, MessageBoxImage.Information); // Add custom Box
                     Environment.Exit(0);
                 } else
-				{
-				data.close ();
-				reader.close ();
-				}
+		{
+			data.close ();
+			reader.close ();
+		}
 				
              
 
