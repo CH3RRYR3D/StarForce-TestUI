@@ -45,11 +45,6 @@ namespace StarForce
             xshd_stream.Close();
         }
 
-        private void rectangle1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            this.Close();
-        }
-
         private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.Close();
