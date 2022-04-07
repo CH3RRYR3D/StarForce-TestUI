@@ -63,7 +63,7 @@ namespace StarForce
             }
             else
             {
-                MessageBoxResult result = System.Windows.MessageBox.Show("Please run the installer to update!", "Update Available", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBoxResult result = System.Windows.MessageBox.Show("Please inject before trying to execute a script.", "Not injected", MessageBoxButton.OK, MessageBoxImage.Information);
             }
 
         }
@@ -90,7 +90,7 @@ namespace StarForce
             }
             else
             {
-                MessageBoxResult result = System.Windows.MessageBox.Show("Please run the installer to update!", "Update Available", MessageBoxButton.OK, MessageBoxImage.Information);
+               return;
             }
 
         }
@@ -115,7 +115,7 @@ namespace StarForce
             }
             else
             {
-                MessageBoxResult result = System.Windows.MessageBox.Show("Please run the installer to update!", "Update Available", MessageBoxButton.OK, MessageBoxImage.Information);
+               return;
             }
         }
 
