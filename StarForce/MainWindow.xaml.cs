@@ -75,7 +75,7 @@ namespace StarForce
             }
             else
             {
-                MessageBoxResult result = System.Windows.MessageBox.Show("Please inject before trying to execute a script.", "Not injected", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBoxResult result = System.Windows.MessageBox.Show("Please inject before trying to execute a script.", "Not injected", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
         }
@@ -102,7 +102,7 @@ namespace StarForce
             }
             else
             {
-              MessageBoxResult result = System.Windows.MessageBox.Show("Please inject before trying to execute a script.", "Not injected", MessageBoxButton.OK, MessageBoxImage.Information);
+              MessageBoxResult result = System.Windows.MessageBox.Show("Please inject before trying to load a script.", "Not injected", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
         }
